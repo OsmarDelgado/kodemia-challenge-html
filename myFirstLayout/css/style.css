@@ -1,1 +1,192 @@
 /* No CSS *//*# sourceMappingURL=style.css.map */
+
+*{
+  box-sizing: border-box ;
+  font-family:'Raleway',sans-serif
+}
+
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+header ,.section-header{
+  background : #E5E5E5;
+  
+}
+
+.section-header .nav-sectionHeader{
+  display: flex;
+  justify-content: space-between;/*Parte de arriba separada*/
+  align-items: center;
+  flex-direction: row;
+}
+
+.section-header .nav-sectionHeader ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px 40px 30px;
+}
+
+.section-header .nav-sectionHeader ul li{
+margin: 5px 10px 0px 30px;
+}
+.section-header .nav-sectionHeader .ulTextos{
+  align-items: center;
+}
+
+.section-header .nav-sectionHeader .ulTextos .Contactanos {
+  display: flex;
+  padding: 10px;
+  width: 110px;
+  height: 32px;
+  background:black;
+  border-radius: 8px;
+}
+
+.section-header .nav-sectionHeader .ulTextos .Contactanos a{
+  display: flex;
+  align-items: center;   
+  text-align: center ;
+  color: #E5E5E5;
+  /*Especificaciones letra*/
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.section-header .textos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-header .textos .divTextos{
+display: flex;  
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+}
+/*El arte de tocar piano */
+.section-header .textos .divTextos .arte{
+  width: 176px;
+  height: 19px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #858585;
+  margin-bottom: 20px;
+}
+/*Instituto*/
+.section-header .textos .divTextos .instituto{
+  width: 494px;
+  height: 62px;
+  left: 233px;
+  top: 179px;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 76px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 0 0px 30px 100px;
+  color: #000000;
+}
+
+.section-header .botonesHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-header .botonesHeader li {
+  margin-right: 15px;
+}
+
+.section-header .botonesHeader .botonCursos{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 32px;
+  padding: 10px;
+  background: #000000;
+  border-radius: 8px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+}
+.section-header .botonesHeader .botonCursos a{
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+
+.section-header .botonesHeader .botonPlano{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 130px;
+  height: 35px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.section-header .botonesHeader .botonPlano a{
+  align-items: center;  
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.section-header .divImagen{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.section-header .divImagen img{
+  margin-top: 50px;
+  width: 589px;
+  height: 454px;
+  background: url(pixlr-bg-result (9).png);
+  filter:drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0.38))
+} 
+/*
+.section-header .divImagen img{
+  position: absolute;
+  width: 589px;
+  height: 454px;
+  left: 40%;
+  top: 40%;
+}*/
