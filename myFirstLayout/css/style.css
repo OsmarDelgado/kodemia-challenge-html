@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+div{
+    border: 1px dashed red;
+}
+
+img{
+    border: 1px dashed yellow;
+}
+
+nav{
+    border: 1px dashed blue;
+}
+
+li{
+    border: 1px dashed orange;
+}
+
+a{
+    border: 1px dashed red;
+}
+
+h2, h3, h4, p{
+    border: 1px dashed navy;
+}
+
+*/
+ul {
+  list-style: none;
+  /*border: 1px dashed black;*/
+}
+
+footer {
+  background-color: gray;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(gray), to(white));
+  background-image: linear-gradient(360deg, gray, white);
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .logo-class {
+  margin: 20px 20px;
+  padding: 5px 5px;
+  height: 113px;
+  width: 116px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .icon-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .icon-nav ul {
+  padding: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .icon-nav ul li {
+  margin: 0px 10px;
+}
+
+footer div h4, footer div p {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+footer div p {
+  margin-top: 20px;
+}
+
+footer div .link-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div .link-nav ul {
+  height: 25vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
