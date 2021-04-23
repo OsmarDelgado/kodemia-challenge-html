@@ -1,11 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*
+
 div{
     border: 1px dashed red;
 }
@@ -30,19 +30,16 @@ h2, h3, h4, p{
     border: 1px dashed navy;
 }
 
-*/
-ul {
-  list-style: none;
-  /*border: 1px dashed black;*/
+ul{
+    list-style: none;    
+    border: 1px dashed rgb(247, 147, 147);
 }
 
+*/
 footer {
   background-color: gray;
   background-image: -webkit-gradient(linear, left bottom, left top, from(gray), to(white));
   background-image: linear-gradient(360deg, gray, white);
-}
-
-footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,23 +49,37 @@ footer div {
           flex-direction: column;
 }
 
-footer .logo-class {
+footer ul {
+  list-style: none;
+}
+
+footer #id-responsive-container #id-socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #id-responsive-container #id-socialmedia #id-logo {
   margin: 20px 20px;
   padding: 5px 5px;
   height: 113px;
   width: 116px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
-footer .icon-nav {
+footer #id-responsive-container #id-socialmedia #icon-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .icon-nav ul {
+footer #id-responsive-container #id-socialmedia #icon-nav ul {
   padding: 0;
   width: 100vw;
   display: -webkit-box;
@@ -83,28 +94,29 @@ footer .icon-nav ul {
           justify-content: center;
 }
 
-footer .icon-nav ul li {
+footer #id-responsive-container #id-socialmedia #icon-nav ul li {
   margin: 0px 10px;
 }
 
-footer div h4, footer div p {
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros h4, footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
   text-align: center;
   margin: 20px 0px;
 }
 
-footer div p {
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
   margin-top: 20px;
 }
 
-footer div .link-nav {
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros #link-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer div .link-nav ul {
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros #link-nav ul {
   height: 25vh;
   width: 100vw;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,5 +130,149 @@ footer div .link-nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-Address h4, footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+  margin-top: 20px;
+}
+
+footer #id-responsive-container #id-subresponsive #id-copyright {
+  text-align: center;
+}
+
+footer #id-developers {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+/*
+Esta parte de es de Responsividad
+
+Tablet en adelante
+Va desde 0 hasta 768px
+
+*/
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: gray;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(gray), to(white));
+    background-image: linear-gradient(360deg, gray, white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer #id-responsive-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer #id-responsive-container #id-socialmedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #id-responsive-container #id-socialmedia #id-logo {
+    margin: 20px 20px;
+    padding: 5px 5px;
+    height: 113px;
+    width: 116px;
+  }
+  footer #id-responsive-container #id-socialmedia #icon-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25vw;
+  }
+  footer #id-responsive-container #id-socialmedia #icon-nav ul {
+    padding: 0;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer #id-responsive-container #id-socialmedia #icon-nav ul li {
+    margin: 0px 10px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros {
+    padding-left: 45px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros h4, footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
+    text-align: left;
+    margin: 20px 0px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
+    margin-top: 20px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros #link-nav ul {
+    height: 25vh;
+    width: 25vw;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-Address h4, footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+    text-align: left;
+    margin: 20px 0px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+    margin-top: 20px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-copyright {
+    padding-left: 45px;
+    text-align: left;
+  }
+  footer #id-developers {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
