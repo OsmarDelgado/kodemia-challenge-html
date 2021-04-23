@@ -1,19 +1,508 @@
 * {
-    padding: 0;
-    margin: 0;
+    // padding: 0;
+    // margin: 0;
     box-sizing: border-box;
+    font-family: "Raleway", "sans-serif";
 }
 
-body {
-    background-color: #F5F5F5;
+ul {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: #000000;
+}
+
+header,
+.section-header {
+    background: #e5e5e5;
+    height: 100%;
+}
+
+body {
+    background-color: #f5f5f5;
 }
 
 h3 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Abril Fatface", cursive;
+}
+
+.section-header {
+    background: #e5e5e5;
+    height: 100%;
+
+    .nav-sectionHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .divTextos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .arte {
+                width: 176px;
+                height: 19px;
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #858585;
+                margin-bottom: 20px;
+            }
+
+            .instituto {
+                width: 288px;
+                height: 62px;
+                font-family: "Abril Fatface";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 43px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #000000;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .botonesHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            margin-right: 15px;
+        }
+
+        .botonCursos {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100px;
+            height: 32px;
+            padding: 10px;
+            background: #000000;
+            border-radius: 8px;
+            border: 1px solid white;
+            box-sizing: border-box;
+            color: white;
+
+            a {
+                color: white;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.05em;
+            }
+        }
+
+        .botonPlano {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 130px;
+            height: 35px;
+            padding: 10px;
+            background: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 8px;
+
+            a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+
+    .divImagen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+        }
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+.Contactanosoculto {
+    display: none;
+}
+
+.carritoDeCompras {
+    width: 100%;
+}
+
+.pianoNegro {
+    width: 100%;
+}
+
+.segundaPagina {
+    height: 100vh;
+    position: relative;
+    height: 100%;
+
+    .conoceNuestro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .pianosOnditas {
+            width: 100%;
+        }
+    }
+
+    .textoSegundaPagina {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(180deg,
+                #ffffff 0%,
+                rgba(0, 0, 0, 0.75) 37.19%,
+                rgba(0, 0, 0, 0.75) 76.04%,
+                #ffffff 100%);
+
+        .ebony {
+            width: 288px;
+            height: 32px;
+            font-family: "Abril Fatface";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            display: flex;
+            justify-content: center;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+        }
+
+        .clasificacion {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-right: 15px;
+            }
+
+            .estrellita {
+                width: 100%;
+            }
+        }
+
+        .lorem {
+            width: 288px;
+            height: 131px;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+        }
+
+        .precio {
+            width: 224px;
+            height: 32px;
+            font-family: "Abril Fatface";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+        }
+
+        .informacionMueble {
+            display: flex;
+
+            li {
+                margin-right: 15px;
+            }
+
+            .circulitosGris {
+                width: 100%;
+            }
+        }
+
+        .ulBotonCarrito {
+            padding: 0;
+
+            .botonAgregarCarrito {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                padding: 5px;
+                background: #000000;
+                border-radius: 8px;
+                border: 1px solid white;
+                box-sizing: border-box;
+                color: white;
+
+                a {
+                    width: 228px;
+                    height: 32px;
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+#container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        width: 288px;
+        height: 72px;
+        font-family: "Abril Fatface";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #000000;
+        z-index: 2;
+        position: relative;
+        margin: auto;
+    }
+
+    video {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+    div {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Responsive {
+        display: none;
+        width: 50%;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .oculto {
+        display: block;
+    }
+
+    .Contactanosoculto {
+        display: block;
+    }
+
+    .section-header {
+        .nav-sectionHeader {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                margin: 5px 10px 40px 30px;
+
+                li {
+                    margin: 5px 10px 0px 30px;
+                }
+            }
+
+            .ulTextos {
+                align-items: center;
+
+                .Contactanosoculto {
+                    display: flex;
+                    padding: 10px;
+                    width: 110px;
+                    height: 32px;
+                    background: black;
+                    border-radius: 8px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        color: #e5e5e5;
+                        font-family: Raleway;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+                    }
+                }
+            }
+        }
+
+        .textos {
+            .divTextos {
+                .instituto {
+                    width: 494px;
+                    height: 62px;
+                    font-size: 56px;
+                    line-height: 76px;
+                    margin: 0 0px 30px 100px;
+                }
+            }
+        }
+
+        .divImagen {
+            img {
+                margin-top: 50px;
+                filter: drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0));
+            }
+        }
+    }
+
+    .segundaPagina {
+        background: linear-gradient(180deg,
+                #ffffff 0%,
+                rgba(255, 255, 255, 0.820101) 14.06%,
+                rgba(0, 0, 0, 0.75) 37.19%,
+                rgba(0, 0, 0, 0.75) 55.32%,
+                rgba(255, 255, 255, 0.6454) 88.52%,
+                #ffffff 97.7%);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .conoceNuestro {
+            width: 70%;
+        }
+
+        .textoSegundaPagina {
+            display: none;
+
+            .lorem {
+                text-align: left;
+                margin-left: 30px;
+            }
+
+            .precio {
+                width: auto;
+                margin-left: 30px;
+            }
+
+            .clasificacion {
+                li {
+                    margin-right: 5px;
+
+                    a {
+                        color: #ffffff;
+                    }
+                }
+
+                .estrellita {
+                    width: 32px;
+                }
+            }
+
+            .informacionMueble {
+                li {
+                    margin-right: 5px;
+
+                    a {
+                        color: #ffffff;
+                    }
+                }
+
+                .circulitosGris {
+                    width: 4px;
+                }
+            }
+
+            .ulBotonCarrito {
+                .botonAgregarCarrito {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    #container {
+        h2 {
+            width: 470px;
+            height: 62px;
+            font-size: 32px;
+            line-height: 43px;
+            margin: auto;
+        }
+
+        .Responsive {
+            display: flex;
+            flex-direction: column;
+            background: none;
+            margin-left: 1.5rem;
+            width: 30%;
+        }
+    }
 }
 
 .section-title {
@@ -30,16 +519,17 @@ h3 {
 
 #articles {
     padding: 40px 0;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
 
     .link {
         text-align: center;
-        
+
         a {
             padding: 10px 40px;
             background-color: #000000;
             border-radius: 10px;
             display: inline-block;
-            color: #FFFFFF;
+            color: #ffffff;
             transition: 0.3s;
             border: 1px solid #000000;
 
@@ -56,7 +546,7 @@ h3 {
         flex-direction: column;
         align-items: center;
 
-        @media screen and ( min-width: 1024px ) {
+        @media screen and (min-width: 1024px) {
             flex-direction: row;
             justify-content: space-around;
             align-items: flex-end;
@@ -66,14 +556,15 @@ h3 {
             padding: 20px;
             width: 300px;
             margin: 25px 0;
-            background-color: #FFFFFF;
-            box-shadow: 0 8px 16px 0 rgba( 0, 0, 0 , 0.2 );
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             border-radius: 10px;
 
             .image {
                 padding: 20px;
                 margin-bottom: 15px;
-                border-bottom: 1px dashed #DBDBDB;
+                border-bottom: 1px dashed #dbdbdb;
+
                 img {
                     width: 100%;
                 }
@@ -91,6 +582,7 @@ h3 {
                 .tags {
                     padding-bottom: 15px;
                     font-size: 15px;
+
                     ul {
                         display: flex;
                         flex-direction: row;
@@ -115,10 +607,14 @@ h3 {
                         transition: 0.3s;
                         // margin: 10px 0 0 0;
                         color: #000000;
-                        
+
                         &:hover {
                             background-color: #000000;
                             color: #ffffff;
+                        }
+
+                        span {
+                            font-weight: 600;
                         }
                     }
 
@@ -147,3 +643,13 @@ h3 {
         }
     }
 }
+
+// #partner {
+//     .container {
+//         .partners {
+//             img {
+
+//             }
+//         }
+//     }
+// }
