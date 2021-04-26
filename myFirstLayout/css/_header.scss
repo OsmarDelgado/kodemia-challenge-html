@@ -1,25 +1,191 @@
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-#header {
-    overflow: hidden;
-    margin: 20px;
-    padding: 20px;
-    top: 40px;
+/*Primera Hoja*/
+.section-header{
+	.oculto,.Contactanosoculto{
+		  display: none;
+		}
+		.carritoDeCompras , .pianoNegro{
+		  width: 100%;
+		}
+	.nav-sectionHeader{
+	  display: flex;
+	  justify-content: space-between;/*Parte de arriba separada*/
+	  align-items: center;
+	  flex-direction: row;
+	  width: 100%;
+		}
+	.ul-sectionHeader{
+		li{
+			a{
+				img{
+				  width: 88px;
+				}
+			}	
+		}
+	}
+	.textos{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+			.divTextos{
+				display: flex;  
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+					.arte{
+					  width: 176px;
+					  height: 19px;
+					  font-family: Raleway;
+					  font-style: normal;
+					  font-weight: 500;
+					  font-size: 16px;
+					  line-height: 19px;
+					  /* identical to box height */
+					  display: flex;
+					  align-items: center;
+					  text-align: center;
+					  letter-spacing: 0.05em;
+					  color: #858585;
+					  margin-bottom: 20px;
+					}
+					.instituto{
+						width: 288px;
+						height: 62px;
+						font-family: 'Abril Fatface';
+						font-style: normal;
+						font-weight: normal;
+						font-size: 32px;
+						line-height: 43px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: 0.05em;
+						color: #000000;
+						margin-left: 20px;
+						}	
+				} 
+	}
+	.botonesHeader{
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+		 li{
+		  margin-right: 15px;
+			}
+		.botonCursos{
+		  display: flex;
+		  align-items: center;
+		  text-align: center;
+		  width: 100px;
+		  height: 32px;
+		  padding: 10px;
+		  background: #000000;
+		  border-radius: 8px;
+		  border: 1px solid white;
+		  box-sizing: border-box;
+		  color: white;
+				a{
+			  color: white;
+			  font-style: normal;
+			  font-weight: 500;
+			  font-size: 14px;
+			  line-height: 21px;
+			  letter-spacing: 0.05em;
+				}
+		}
+		.botonPlano{
+		  display: flex;
+		  align-items: center;
+		  text-align: center;
+		  width: 130px;
+		  height: 35px;
+		  padding: 10px;
+		  background: #FFFFFF;
+		  border: 1px solid #000000;
+		  border-radius: 8px;
+					a{
+				  font-style: normal;
+				  font-weight: 500;
+				  font-size: 14px;
+				  line-height: 21px;
+				  display: flex;
+				  align-items: center;
+				  text-align: center;
+				  letter-spacing: 0.05em;
+					}
+		}	
+	}
+	.divImagen{/*Acomodar la imagen del piano*/
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+				img{
+				filter: drop-shadow(-9.40088px 8.11894px 27.348px 
+				rgba(0, 0, 0, 0.38));
+					}  
+		}
+}/*Section Header*/
 
-    .container {
-        display: flex;
-        flex-direction: column;
 
-        .logo {
-            img {
-                max-height: 88px;
-            }
-        }
 
-        .nav-menu {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
+
+@media screen and (min-width: 1024px){
+  .oculto,.Contactanosoculto{
+  display: block;
+  }
+  .section-header{
+		.nav-sectionHeader{
+				ul{
+				  display: flex;
+				  justify-content: space-between;
+				  margin: 5px 10px 40px 30px;
+				}
+				li{
+				  margin: 5px 10px 0px 30px;
+				  }
+				 .ulTextos{
+					align-items: center;
+						.Contactanosoculto{
+						display: flex;
+						padding: 10px;
+						width: 110px;
+						height: 32px;
+						background:black;
+						border-radius: 8px;
+					  }
+						a{
+						display: flex;
+						align-items: center;   
+						text-align: center ;
+						color: #E5E5E5;
+						/*Especificaciones letra*/
+						font-family: Raleway;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 16px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						letter-spacing: 0.05em;
+					  }
+				  } 
+		}
+		.textos{
+			.divTextos{
+				instituto{
+			  width: 494px;
+			  height: 62px;
+			  font-size: 56px;
+			  line-height: 76px;
+			  margin: 0 0px 30px 100px;
+			  }  
+			}
+		}
+		.divImagen{
+			img{
+			  margin-top: 50px;
+			  filter:drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0))
+			   } 
+		}
+  }
+}/*Media query*/

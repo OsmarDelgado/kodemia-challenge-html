@@ -1,0 +1,242 @@
+/*segunda Hoja*/
+
+.segundaPagina{
+    position: relative;
+      #container {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+              h2{
+          width: 288px;
+          height: 72px;
+          font-family: 'Abril Fatface';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 32px;
+          text-align: center;
+          letter-spacing: 0.05em; 
+          color: #000000;
+          z-index: 2;
+          position: relative;
+          margin: auto;
+          }
+           video {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 0;
+          }
+           div {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+          }
+           .Responsive{
+              display: none;
+              width: 50%;
+              align-items: flex-start;
+                      }
+                  }
+      .conoceNuestro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+              .pianosOnditas
+              {
+                width: 100%;
+              }
+                  }			
+    .textoSegundaPagina {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(180deg, #FFFFFF 0%,
+      rgba(0, 0, 0, 0.75) 37.19%,
+      rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+      height: 70%;
+                  .ebony{ 
+              width: 288px;
+              height: 32px;
+              font-family: 'Abril Fatface';
+              font-style: normal;
+              font-weight: normal;
+              font-size: 24px;
+              line-height: 32px;
+              display: flex;
+              justify-content: center;
+              letter-spacing: 0.05em;
+              color: #FFFFFF;
+              }
+              .clasificacion{
+                display: flex;
+                align-items: center;
+                li{/*Espacio entre estrellitas*/
+                  margin-right: 15px;
+                  }
+                  .estrellita{
+                  width: 100%;
+                  }
+              }
+          .lorem{
+            width: 288px;
+            height: 131px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+          }
+          .precio{
+            width: 224px;
+            height: 32px;
+            font-family: 'Abril Fatface';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+          }
+          .informacionMueble{
+            display: flex;
+                li{/*Espacio entre circulito*/
+                  margin-right: 15px;
+                  }
+              .circulitosGris{
+              width: 100%;
+                          }	
+              }
+          ulBotonCarrito{
+                padding: 0;
+                .botonAgregarCarrito{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px;
+                    background: #000000;
+                    border-radius: 8px;
+                    border: 1px solid white;
+                    box-sizing: border-box;
+                    color: white;
+                          a{
+                        width: 228px;
+                        height: 32px;
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.05em;
+                        color: #FFFFFF;
+                      }
+                  }
+              }	
+              }/*Texto Segunda Pagina*/
+  }/*Segunda Pagina*/
+  
+  @media screen and (min-width: 1024px){
+      .segundaPagina{
+      background: linear-gradient(180deg,
+      #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%,
+      rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%,
+      rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+          #container{
+               h2{
+                width: 470px;
+                height: 62px;
+                font-size: 32px;
+                line-height: 43px;  
+                margin:auto;
+                  }
+              .Responsive{
+              display: flex;
+              flex-direction: column;
+              background: none; 
+              margin-left: 1.5rem;
+              width: 30%;
+          }	
+              }
+          .conoceNuestro {
+            width: 70%;
+          }
+          .textoSegundaPagina{
+            display: none;  
+                    .ebony{
+              margin-bottom: revert;
+                          }
+              clasificacion{
+          margin-bottom: revert;
+          margin-left: inherit;
+                  }
+               .precio{
+          width: auto;
+          margin-left: 30px;
+          margin-bottom: revert;  
+              }				
+          .lorem{
+            text-align: left;
+            margin-left: 30px;
+            margin-bottom: revert;
+              }	
+          informacionMueble {
+          margin-top: revert;
+          margin-left: inherit;
+                      li{/*Espacio entre circulito*/
+                      margin-right: 5px;
+                      }
+                      a{
+                      color: #FFFFFF;
+                      }
+                      .circulitosGris{
+                      width: 4px;
+                      }
+                  }
+          .clasificacion{
+              li{/*Espacio entre estrellitas*/
+              margin-right: 5px;
+              }
+               a{/*Color valoracion*/
+                color: #FFFFFF;
+              }
+              .estrellita{
+              width: 32px;
+              }
+                      }	
+           .ulBotonCarrito{
+                  .botonAgregarCarrito{
+                    margin-left: 15px;
+                    margin-top: 30px;
+                              }
+              }			 
+          }	
+      }	
+  }/*Media Query laptop*/
+  
