@@ -1,0 +1,223 @@
+
+/*
+----------------------------------------------------------------------
+Esta sección es Mobile First
+Va desde 0 hasta 768px
+
+--------------------------------------------
+Footer section 
+--------------------------------------------
+*/
+
+footer {
+    background-color: gray;
+    background-image: linear-gradient(360deg, gray, white);
+    display: flex;
+    flex-direction: column;
+
+    ul{
+        list-style: none;
+    }
+
+    #id-responsive-container{
+
+        #id-socialmedia{
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+
+            #id-logo{
+                margin: 20px 20px;
+                padding: 5px 5px;
+                height: 113px;
+                width: 116px;
+            }
+
+            #icon-nav{
+                display: flex;
+
+                ul{
+                    padding: 0;
+                    width: 100vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:center; 
+
+                    li{
+                        margin: 0px 10px;
+                    }
+                }       
+            }
+
+
+        }
+
+        #id-subresponsive{
+
+            #id-contact{
+
+                #id-nosotros{
+
+                    h4, p{
+                        text-align: center;
+                        margin: 20px 0px;
+                    }
+
+                    p{
+                        margin-top: 20px;
+                    }
+
+                    #link-nav{
+                        display: flex;
+
+                        ul {
+                            height: 25vh;
+                            width: 100vw;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                    }          
+                }
+
+                #id-Address{
+
+                    h4, p{
+                        text-align: center;
+                        margin: 20px 0px;
+                    }
+
+                    p{
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            #id-copyright{
+             text-align: center;
+            }
+        }
+    }
+
+    #id-developers{
+        justify-self: center;
+        text-align: center;
+    }    
+}
+
+
+/*
+Esta parte de es de Responsividad
+----------------------------------------------------------------------
+Tablet en adelante
+Va desde 760px en adelante
+
+--------------------------------------------
+Footer section 
+--------------------------------------------
+*/
+
+@media screen and (min-width:768px) {
+
+    footer {
+        background-color: gray;
+        background-image: linear-gradient(360deg, gray, white);
+        display: flex;
+        flex-direction: column;
+
+        #id-responsive-container{
+            display: flex;
+            flex-direction: row;
+
+            #id-socialmedia{
+                display: flex;
+                flex-direction: column;
+                align-items: center;   
+
+                #id-logo{
+                    margin: 20px 20px;
+                    padding: 5px 5px;
+                    height: 113px;
+                    width: 116px;
+                }
+
+                #icon-nav{
+                    display: flex;
+                    width: 25vw;
+
+                    ul{
+                        padding: 0;
+                        width: 100vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content:center; 
+
+                        li{
+                            margin: 0px 10px;
+                        }
+                    }       
+                }
+            }
+
+            #id-subresponsive{
+
+                #id-contact{
+                    display: flex;
+                    flex-direction: row;
+
+
+                    #id-nosotros{
+                        padding-left: 45px;
+
+                        h4, p{
+                            text-align:left;
+                            margin: 20px 0px;
+                        }
+
+                        p{
+                            margin-top: 20px;
+                        }
+
+                        #link-nav{
+
+                            ul {
+                                height: 25vh;
+                                width: 25vw;
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                            }
+                        }          
+                    }
+
+                    #id-Address{
+
+                        h4, p{
+                            text-align: left;
+                            margin: 20px 0px;
+                        }
+
+                        p{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                #id-copyright{
+                    padding-left: 45px;
+                    text-align: left;
+                }
+            }
+        }
+
+        #id-developers{
+            justify-self: center;
+            text-align: center;
+        }    
+    }
+
+}

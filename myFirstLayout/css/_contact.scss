@@ -1,0 +1,121 @@
+/*
+----------------------------------------------------------------------
+Esta sección es Mobile First
+Va desde 0 hasta 768px
+
+-------------------------------------------
+Form - Contactanos
+-------------------------------------------
+*/
+
+#id-form-section{
+    background: url("../assets/images/darius-soodmand.png") center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    #id-fade{
+        background-image: linear-gradient(360deg, rgba(255,0,0,0), rgba(255,255,255,1));
+
+        #id-form-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2, p{
+                margin: 40px 40px 40px 40px;
+            }
+        }
+
+        #id-form-container{
+            height: 70%;
+
+            div, form, label, input{
+                margin: 10px 0px;
+            }
+
+            #id-form-contact{
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 0px 40px;
+
+                Label, input{
+                    display: block;
+
+                    /* Esto hace que si crece el área
+                no se reacomoden las etiquetas a un
+                lado del input*/
+
+                }
+
+                input{
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-color: white;
+                    width: 100%;
+                    color: white;
+                }
+
+                textarea{
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-color: white;
+                    width: 100%;
+                    color: white;
+                }
+
+                #id-submit{
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }    
+}
+
+
+
+/*
+Esta parte de es de Responsividad
+----------------------------------------------------------------------
+Tablet en adelante
+Va desde 760px en adelante
+
+-------------------------------------------
+Form - Contactanos
+-------------------------------------------
+*/
+
+@media screen and (min-width:768px) {
+
+    #id-form-section{
+
+        #id-form-container{
+
+            #id-form-contact{
+
+                #id-div-middle{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                    div, input{
+                        display: block;
+                        width: 100%;
+                    }
+
+                    #id-tel{
+                        margin-right: 20px;
+                    }
+
+                    #id-email{
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

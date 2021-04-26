@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -477,11 +478,11 @@ body {
   width: 100%;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito {
   padding: 0;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito .botonAgregarCarrito {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +501,7 @@ body {
   color: white;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito .botonAgregarCarrito a {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito a {
   width: 228px;
   height: 32px;
   font-family: 'Raleway';
@@ -612,4 +613,382 @@ body {
 }
 
 /*Media Query laptop*/
+/*
+----------------------------------------------------------------------
+Esta sección es Mobile First
+Va desde 0 hasta 768px
+
+-------------------------------------------
+Form - Contactanos
+-------------------------------------------
+*/
+#id-form-section {
+  background: url("../assets/images/darius-soodmand.png") center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#id-form-section #id-fade {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 0, 0, 0)), to(white));
+  background-image: linear-gradient(360deg, rgba(255, 0, 0, 0), white);
+}
+
+#id-form-section #id-fade #id-form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#id-form-section #id-fade #id-form-header h2, #id-form-section #id-fade #id-form-header p {
+  margin: 40px 40px 40px 40px;
+}
+
+#id-form-section #id-fade #id-form-container {
+  height: 70%;
+}
+
+#id-form-section #id-fade #id-form-container div, #id-form-section #id-fade #id-form-container form, #id-form-section #id-fade #id-form-container label, #id-form-section #id-fade #id-form-container input {
+  margin: 10px 0px;
+}
+
+#id-form-section #id-fade #id-form-container #id-form-contact {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px 40px;
+}
+
+#id-form-section #id-fade #id-form-container #id-form-contact Label, #id-form-section #id-fade #id-form-container #id-form-contact input {
+  display: block;
+  /* Esto hace que si crece el área
+                no se reacomoden las etiquetas a un
+                lado del input*/
+}
+
+#id-form-section #id-fade #id-form-container #id-form-contact input {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: white;
+  width: 100%;
+  color: white;
+}
+
+#id-form-section #id-fade #id-form-container #id-form-contact textarea {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: white;
+  width: 100%;
+  color: white;
+}
+
+#id-form-section #id-fade #id-form-container #id-form-contact #id-submit {
+  text-align: center;
+  color: white;
+}
+
+/*
+Esta parte de es de Responsividad
+----------------------------------------------------------------------
+Tablet en adelante
+Va desde 760px en adelante
+
+-------------------------------------------
+Form - Contactanos
+-------------------------------------------
+*/
+@media screen and (min-width: 768px) {
+  #id-form-section #id-form-container #id-form-contact #id-div-middle {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #id-form-section #id-form-container #id-form-contact #id-div-middle div, #id-form-section #id-form-container #id-form-contact #id-div-middle input {
+    display: block;
+    width: 100%;
+  }
+  #id-form-section #id-form-container #id-form-contact #id-div-middle #id-tel {
+    margin-right: 20px;
+  }
+  #id-form-section #id-form-container #id-form-contact #id-div-middle #id-email {
+    margin-left: 20px;
+  }
+}
+
+/*
+----------------------------------------------------------------------
+Esta sección es Mobile First
+Va desde 0 hasta 768px
+
+--------------------------------------------
+Footer section 
+--------------------------------------------
+*/
+footer {
+  background-color: gray;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(gray), to(white));
+  background-image: linear-gradient(360deg, gray, white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer #id-responsive-container #id-socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #id-responsive-container #id-socialmedia #id-logo {
+  margin: 20px 20px;
+  padding: 5px 5px;
+  height: 113px;
+  width: 116px;
+}
+
+footer #id-responsive-container #id-socialmedia #icon-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #id-responsive-container #id-socialmedia #icon-nav ul {
+  padding: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #id-responsive-container #id-socialmedia #icon-nav ul li {
+  margin: 0px 10px;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros h4, footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
+  margin-top: 20px;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros #link-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros #link-nav ul {
+  height: 25vh;
+  width: 100vw;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-Address h4, footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+  margin-top: 20px;
+}
+
+footer #id-responsive-container #id-subresponsive #id-copyright {
+  text-align: center;
+}
+
+footer #id-developers {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+/*
+Esta parte de es de Responsividad
+----------------------------------------------------------------------
+Tablet en adelante
+Va desde 760px en adelante
+
+--------------------------------------------
+Footer section 
+--------------------------------------------
+*/
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: gray;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(gray), to(white));
+    background-image: linear-gradient(360deg, gray, white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer #id-responsive-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer #id-responsive-container #id-socialmedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer #id-responsive-container #id-socialmedia #id-logo {
+    margin: 20px 20px;
+    padding: 5px 5px;
+    height: 113px;
+    width: 116px;
+  }
+  footer #id-responsive-container #id-socialmedia #icon-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25vw;
+  }
+  footer #id-responsive-container #id-socialmedia #icon-nav ul {
+    padding: 0;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer #id-responsive-container #id-socialmedia #icon-nav ul li {
+    margin: 0px 10px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros {
+    padding-left: 45px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros h4, footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
+    text-align: left;
+    margin: 20px 0px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros p {
+    margin-top: 20px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-nosotros #link-nav ul {
+    height: 25vh;
+    width: 25vw;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-Address h4, footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+    text-align: left;
+    margin: 20px 0px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-contact #id-Address p {
+    margin-top: 20px;
+  }
+  footer #id-responsive-container #id-subresponsive #id-copyright {
+    padding-left: 45px;
+    text-align: left;
+  }
+  footer #id-developers {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
