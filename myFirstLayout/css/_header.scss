@@ -1,8 +1,11 @@
 /*Primera Hoja*/
+/*Ocultar barra -> Mobile*/
+
+
 .section-header{
-	.oculto,.Contactanosoculto{
-		  display: none;
-		}
+	.oculto , .Contactanosoculto{
+		display: none;
+	  }
 		.carritoDeCompras , .pianoNegro{
 		  width: 100%;
 		}
@@ -34,7 +37,7 @@
 					.arte{
 					  width: 176px;
 					  height: 19px;
-					  font-family: Raleway;
+					  font-family: 'Raleway';
 					  font-style: normal;
 					  font-weight: 500;
 					  font-size: 16px;
@@ -125,14 +128,12 @@
 		}
 }/*Section Header*/
 
-
-
-
 @media screen and (min-width: 1024px){
-  .oculto,.Contactanosoculto{
-  display: block;
-  }
+
   .section-header{
+	.oculto , .Contactanosoculto{
+		display: block;
+		}
 		.nav-sectionHeader{
 				ul{
 				  display: flex;
@@ -151,12 +152,15 @@
 						height: 32px;
 						background:black;
 						border-radius: 8px;
+						a{
+							color: #FFFFFF;
+						}
 					  }
 						a{
 						display: flex;
 						align-items: center;   
 						text-align: center ;
-						color: #E5E5E5;
+						color: #000;
 						/*Especificaciones letra*/
 						font-family: Raleway;
 						font-style: normal;
@@ -172,7 +176,7 @@
 		}
 		.textos{
 			.divTextos{
-				instituto{
+				.instituto{
 			  width: 494px;
 			  height: 62px;
 			  font-size: 56px;
