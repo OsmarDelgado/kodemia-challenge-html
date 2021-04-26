@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    top: 40px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            img {
+                max-height: 88px;
+            }
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
