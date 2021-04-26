@@ -726,6 +726,10 @@ body {
           justify-content: space-between;
 }
 
+#articles .container .article .content .tags ul li {
+  list-style: disc;
+}
+
 #articles .container .article .content .tags ul li:nth-child(1) {
   list-style-type: none;
 }
