@@ -31,6 +31,7 @@ body {
 }
 
 /*Primera Hoja*/
+/*Ocultar barra -> Mobile*/
 .section-header .oculto, .section-header .Contactanosoculto {
   display: none;
 }
@@ -91,7 +92,7 @@ body {
 .section-header .textos .divTextos .arte {
   width: 176px;
   height: 19px;
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -224,7 +225,7 @@ body {
 
 /*Section Header*/
 @media screen and (min-width: 1024px) {
-  .oculto, .Contactanosoculto {
+  .section-header .oculto, .section-header .Contactanosoculto {
     display: block;
   }
   .section-header .nav-sectionHeader ul {
@@ -254,6 +255,9 @@ body {
     background: black;
     border-radius: 8px;
   }
+  .section-header .nav-sectionHeader .ulTextos .Contactanosoculto a {
+    color: #FFFFFF;
+  }
   .section-header .nav-sectionHeader .ulTextos a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -262,7 +266,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    color: #E5E5E5;
+    color: #000;
     /*Especificaciones letra*/
     font-family: Raleway;
     font-style: normal;
@@ -274,7 +278,7 @@ body {
     text-align: center;
     letter-spacing: 0.05em;
   }
-  .section-header .textos .divTextos instituto {
+  .section-header .textos .divTextos .instituto {
     width: 494px;
     height: 62px;
     font-size: 56px;
@@ -477,11 +481,11 @@ body {
   width: 100%;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito {
   padding: 0;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito .botonAgregarCarrito {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +504,7 @@ body {
   color: white;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito .botonAgregarCarrito a {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito a {
   width: 228px;
   height: 32px;
   font-family: 'Raleway';
@@ -566,7 +570,7 @@ body {
   .segundaPagina .textoSegundaPagina .ebony {
     margin-bottom: revert;
   }
-  .segundaPagina .textoSegundaPagina clasificacion {
+  .segundaPagina .textoSegundaPagina .clasificacion {
     margin-bottom: revert;
     margin-left: inherit;
   }
@@ -580,18 +584,18 @@ body {
     margin-left: 30px;
     margin-bottom: revert;
   }
-  .segundaPagina .textoSegundaPagina informacionMueble {
+  .segundaPagina .textoSegundaPagina .informacionMueble {
     margin-top: revert;
     margin-left: inherit;
   }
-  .segundaPagina .textoSegundaPagina informacionMueble li {
+  .segundaPagina .textoSegundaPagina .informacionMueble li {
     /*Espacio entre circulito*/
     margin-right: 5px;
   }
-  .segundaPagina .textoSegundaPagina informacionMueble a {
+  .segundaPagina .textoSegundaPagina .informacionMueble a {
     color: #FFFFFF;
   }
-  .segundaPagina .textoSegundaPagina informacionMueble .circulitosGris {
+  .segundaPagina .textoSegundaPagina .informacionMueble .circulitosGris {
     width: 4px;
   }
   .segundaPagina .textoSegundaPagina .clasificacion li {
