@@ -477,11 +477,11 @@ body {
   width: 100%;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito {
   padding: 0;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito .botonAgregarCarrito {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +500,7 @@ body {
   color: white;
 }
 
-.segundaPagina .textoSegundaPagina ulBotonCarrito .botonAgregarCarrito a {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito a {
   width: 228px;
   height: 32px;
   font-family: 'Raleway';
