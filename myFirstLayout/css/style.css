@@ -1,80 +1,52 @@
-/*Valores predeterminados*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Raleway','sans-serif';
-}
+/* No CSS *//*# sourceMappingURL=style.css.map */
 
-ul {
+*{
+  box-sizing: border-box ;
+  font-family:'Raleway','sans-serif';
+}
+ul{
   list-style: none;
 }
 
-a {
+a{
   text-decoration: none;
   color: #000000;
 }
-
-header, .section-header {
-  background: #E5E5E5;
+header ,.section-header{
+  background : #E5E5E5;
   height: 100%;
 }
 
+.section-header .nav-sectionHeader{
+  display: flex;
+  justify-content: space-between;/*Parte de arriba separada*/
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
 /*Ocultar barra -> Mobile*/
-.oculto, .Contactanosoculto {
+.oculto,.Contactanosoculto{
   display: none;
 }
 
-.carritoDeCompras, .pianoNegro {
+.carritoDeCompras , .pianoNegro{
   width: 100%;
 }
 
-/*-------------------------------------*/
-.section-header .nav-sectionHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.section-header .textos{
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /*Parte de arriba separada*/
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.section-header .textos .divTextos{
+display: flex;  
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
-.section-header .textos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section-header .textos .divTextos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.section-header .textos .divTextos .arte {
+/*El arte de tocar piano */
+.section-header .textos .divTextos .arte{
   width: 176px;
   height: 19px;
   font-family: Raleway;
@@ -83,61 +55,42 @@ header, .section-header {
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
   color: #858585;
   margin-bottom: 20px;
 }
-
-.section-header .textos .divTextos .instituto {
-  width: 288px;
-  height: 62px;
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 43px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #000000;
-  margin-left: 20px;
+/*Instituto*/
+.section-header .textos .divTextos .instituto{
+width: 288px;
+height: 62px;
+font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.05em;
+color: #000000;
+margin-left: 20px;
 }
 
-.section-header .botonesHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.section-header .botonesHeader{
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .section-header .botonesHeader li {
   margin-right: 15px;
 }
 
-.section-header .botonesHeader .botonCursos {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.section-header .botonesHeader .botonCursos{
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   width: 100px;
   height: 32px;
@@ -145,12 +98,10 @@ header, .section-header {
   background: #000000;
   border-radius: 8px;
   border: 1px solid white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: white;
 }
-
-.section-header .botonesHeader .botonCursos a {
+.section-header .botonesHeader .botonCursos a{
   color: white;
   font-style: normal;
   font-weight: 500;
@@ -159,13 +110,9 @@ header, .section-header {
   letter-spacing: 0.05em;
 }
 
-.section-header .botonesHeader .botonPlano {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.section-header .botonesHeader .botonPlano{
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   width: 130px;
   height: 35px;
@@ -175,182 +122,123 @@ header, .section-header {
   border-radius: 8px;
 }
 
-.section-header .botonesHeader .botonPlano a {
+.section-header .botonesHeader .botonPlano a{
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
 }
-
-.section-header .divImagen {
-  /*Acomodar la imagen del piano*/
-  display: -webkit-box;
-  display: -ms-flexbox;
+.section-header .divImagen{/*Acomodar la imagen del piano*/
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.section-header .divImagen img {
-  -webkit-filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
-          filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
-}
-
-.segundaPagina {
+ .section-header .divImagen img{
+filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+}  
+/*-------------------------Segunda Hoja--------------------------------*/
+.segundaPagina{
   height: 100vh;
   position: relative;
   height: 100%;
+
 }
 
-.segundaPagina .conoceNuestro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.segundaPagina .conoceNuestro .pianosOnditas {
-  width: 100%;
-}
-
-.segundaPagina #container {
+#container {
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-
-.segundaPagina #container h2 {
-  width: 288px;
-  height: 72px;
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #000000;
-  z-index: 2;
-  position: relative;
-  margin: auto;
+#container h2{
+width: 288px;
+height: 72px;
+font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.05em; 
+color: #000000;
+z-index: 2;
+position: relative;
+margin: auto;
 }
 
-.segundaPagina #container video {
+.segundaPagina .conoceNuestro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.segundaPagina .conoceNuestro .pianosOnditas{
+  width: 100%;
+}
+
+
+#container video {
   position: absolute;
   left: 50%;
   top: 50%;
   min-width: 100%;
   min-height: 100%;
   -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 0;
 }
 
-.segundaPagina #container div {
+#container div {
   position: relative;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
   width: 100%;
 }
-
-.segundaPagina #container .Responsive {
-  display: none;
-  width: 50%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.segundaPagina .textoSegundaPagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #FFFFFF 0%,
+    rgba(0, 0, 0, 0.75) 37.19%,
+    rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
 }
-
-.segundaPagina .textoSegundaPagina {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.segundaPagina .textoSegundaPagina .ebony{ 
+width: 288px;
+height: 32px;
+font-family: 'Abril Fatface';
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+justify-content: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+.segundaPagina .textoSegundaPagina .clasificacion{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(76.04%, rgba(0, 0, 0, 0.75)), to(#FFFFFF));
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+  align-items: center;
+}
+.segundaPagina .textoSegundaPagina .clasificacion li{/*Espacio entre estrellitas*/
+margin-right: 15px;
+}
+.segundaPagina .textoSegundaPagina .clasificacion .estrellita{
+width: 100%;
 }
 
-.segundaPagina .textoSegundaPagina .ebony {
-  width: 288px;
-  height: 32px;
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-}
-
-.segundaPagina .textoSegundaPagina clasificacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.segundaPagina .textoSegundaPagina clasificacion li {
-  /*Espacio entre estrellitas*/
-  margin-right: 15px;
-}
-
-.segundaPagina .textoSegundaPagina clasificacion .estrellita {
-  width: 100%;
-}
-
-.segundaPagina .textoSegundaPagina .lorem {
+.segundaPagina .textoSegundaPagina .lorem{
   width: 288px;
   height: 131px;
   font-family: 'Raleway';
@@ -362,8 +250,7 @@ header, .section-header {
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
-
-.segundaPagina .textoSegundaPagina .precio {
+.segundaPagina .textoSegundaPagina .precio{
   width: 224px;
   height: 32px;
   font-family: 'Abril Fatface';
@@ -371,42 +258,27 @@ header, .section-header {
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
 
-.segundaPagina .textoSegundaPagina .informacionMueble {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.segundaPagina .textoSegundaPagina .informacionMueble{
   display: flex;
 }
-
-.segundaPagina .textoSegundaPagina .informacionMueble li {
-  /*Espacio entre circulitos*/
-  margin-right: 15px;
+.segundaPagina .textoSegundaPagina .informacionMueble li{/*Espacio entre circulito*/
+margin-right: 15px;
 }
-
-.segundaPagina .textoSegundaPagina .informacionMueble .circulitosGris {
-  width: 100%;
+.segundaPagina .textoSegundaPagina .informacionMueble .circulitosGris{
+width: 100%;
 }
-
-.segundaPagina .textoSegundaPagina .ulBotonCarrito {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito{
   padding: 0;
 }
-
-.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito{
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -414,12 +286,10 @@ header, .section-header {
   background: #000000;
   border-radius: 8px;
   border: 1px solid white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: white;
 }
-
-.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito a {
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito a{
   width: 228px;
   height: 32px;
   font-family: 'Raleway';
@@ -427,60 +297,55 @@ header, .section-header {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
+#container  .Responsive{
+    display: none;
+    width: 50%;
+    align-items: flex-start;
+}
+
+  
+
+
 
 /*Laptop*/
-@media screen and (min-width: 1024px) {
-  .oculto, .Contactanosoculto {
-    display: block;
+@media screen and (min-width: 1024px){
+
+  .oculto,.Contactanosoculto{
+  display: block;
   }
-  .section-header .nav-sectionHeader ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 5px 10px 40px 30px;
+  .section-header .nav-sectionHeader ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px 40px 30px;
+}
+
+  .section-header .nav-sectionHeader ul li{
+  margin: 5px 10px 0px 30px;
   }
-  .section-header .nav-sectionHeader ul li {
-    margin: 5px 10px 0px 30px;
+  .section-header .nav-sectionHeader .ulTextos{
+    align-items: center;
   }
-  .section-header .nav-sectionHeader .ulTextos {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+
   .section-header .nav-sectionHeader .ulTextos .Contactanosoculto {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 10px;
     width: 110px;
     height: 32px;
-    background: black;
+    background:black;
     border-radius: 8px;
   }
-  .section-header .nav-sectionHeader .ulTextos .Contactanosoculto a {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
+  .section-header .nav-sectionHeader .ulTextos .Contactanosoculto a{
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+    align-items: center;   
+    text-align: center ;
     color: #E5E5E5;
     /*Especificaciones letra*/
     font-family: Raleway;
@@ -493,90 +358,86 @@ header, .section-header {
     text-align: center;
     letter-spacing: 0.05em;
   }
-  .section-header .textos .divTextos .instituto {
-    width: 494px;
-    height: 62px;
-    font-size: 56px;
-    line-height: 76px;
-    margin: 0 0px 30px 100px;
-  }
-  .section-header .divImagen img {
-    margin-top: 50px;
-    -webkit-filter: drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0));
-            filter: drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0));
-  }
-  .segundaPagina {
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(14.06%, rgba(255, 255, 255, 0.820101)), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(55.32%, rgba(0, 0, 0, 0.75)), color-stop(88.52%, rgba(255, 255, 255, 0.6454)), color-stop(97.7%, #FFFFFF));
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .section-header .textos .divTextos .instituto{
+  width: 494px;
+  height: 62px;
+  font-size: 56px;
+  line-height: 76px;
+  margin: 0 0px 30px 100px;
+  }  
+  .section-header .divImagen img{
+  margin-top: 50px;
+  filter:drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0))
+} 
+.segundaPagina{
+  
+  background: linear-gradient(180deg,
+     #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%,
+     rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%,
+     rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#container h2{
+  
+  width: 470px;
+  height: 62px;
+  font-size: 32px;
+  line-height: 43px;  
+  margin:auto;
+}
+#container .Responsive{
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #container h2 {
-    width: 470px;
-    height: 62px;
-    font-size: 32px;
-    line-height: 43px;
-    margin: auto;
-  }
-  #container .Responsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background: none;
+    flex-direction: column;
+    background: none; 
     margin-left: 1.5rem;
     width: 30%;
-  }
-  .segundaPagina .conoceNuestro {
-    width: 70%;
-  }
-  .segundaPagina .textoSegundaPagina {
-    display: none;
-  }
-  .segundaPagina .textoSegundaPagina .lorem {
-    text-align: left;
-    margin-left: 30px;
-  }
-  .segundaPagina .textoSegundaPagina .precio {
-    width: auto;
-    margin-left: 30px;
-  }
-  .segundaPagina .textoSegundaPagina .clasificacion li {
-    /*Espacio entre estrellitas*/
-    margin-right: 5px;
-  }
-  .segundaPagina .textoSegundaPagina .clasificacion li a {
-    /*Color valoracion*/
-    color: #FFFFFF;
-  }
-  .segundaPagina .textoSegundaPagina .clasificacion .estrellita {
-    width: 32px;
-  }
-  .segundaPagina .textoSegundaPagina .informacionMueble li {
-    /*Espacio entre circulito*/
-    margin-right: 5px;
-  }
-  .segundaPagina .textoSegundaPagina .informacionMueble li a {
-    color: #FFFFFF;
-  }
-  .segundaPagina .textoSegundaPagina .informacionMueble .circulitosGris {
-    width: 4px;
-  }
-  .segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito {
-    margin-left: 15px;
-  }
+}
+.segundaPagina .conoceNuestro {
+  width: 70%;
 }
 
-/*MediaQuery 1024****/
-/*# sourceMappingURL=style.css.map */
+.segundaPagina .textoSegundaPagina{
+  display: none;
+  
+}
+.segundaPagina .textoSegundaPagina .lorem{
+  text-align: left;
+  margin-left: 30px;
+}
+.segundaPagina .textoSegundaPagina .precio{
+width: auto;
+margin-left: 30px;
+}
+.segundaPagina .textoSegundaPagina .clasificacion li{/*Espacio entre estrellitas*/
+margin-right: 5px;
+}
+.segundaPagina .textoSegundaPagina .clasificacion li a{/*Color valoracion*/
+  color: #FFFFFF;
+}
+
+.segundaPagina .textoSegundaPagina .clasificacion .estrellita{
+width: 32px;
+}
+.segundaPagina .textoSegundaPagina .informacionMueble li{/*Espacio entre circulito*/
+margin-right: 5px;
+}
+.segundaPagina .textoSegundaPagina .informacionMueble li a{
+color: #FFFFFF;
+}
+.segundaPagina .textoSegundaPagina .informacionMueble .circulitosGris{
+width: 4px;
+}
+.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito{
+  margin-left: 15px;
+}
+
+
+
+
+
+}/*MediaQuery 1024****/
+
+
+
