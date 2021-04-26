@@ -1,443 +1,62 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
-
-*{
-  box-sizing: border-box ;
-  font-family:'Raleway','sans-serif';
-}
-ul{
-  list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a{
   text-decoration: none;
   color: #000000;
 }
-header ,.section-header{
-  background : #E5E5E5;
-  height: 100%;
+
+ul li {
+  list-style: none;
 }
 
-.section-header .nav-sectionHeader{
-  display: flex;
-  justify-content: space-between;/*Parte de arriba separada*/
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-}
-/*Ocultar barra -> Mobile*/
-.oculto,.Contactanosoculto{
-  display: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', cursive;
 }
 
-.carritoDeCompras , .pianoNegro{
-  width: 100%;
+body, p, a, ul li {
+  font-family: 'Raleway', sans-serif;
 }
 
-.section-header .textos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section-header .textos .divTextos{
-display: flex;  
-flex-direction: column;
-align-items: center;
-text-align: center;
+body {
+  background-color: #f5f5f5;
 }
 
-/*El arte de tocar piano */
-.section-header .textos .divTextos .arte{
-  width: 176px;
-  height: 19px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #858585;
-  margin-bottom: 20px;
-}
-/*Instituto*/
-.section-header .textos .divTextos .instituto{
-width: 288px;
-height: 62px;
-font-family: 'Abril Fatface';
-font-style: normal;
-font-weight: normal;
-font-size: 32px;
-line-height: 43px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.05em;
-color: #000000;
-margin-left: 20px;
-}
-
-.section-header .botonesHeader{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.section-header .botonesHeader li {
-  margin-right: 15px;
-}
-
-.section-header .botonesHeader .botonCursos{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100px;
-  height: 32px;
-  padding: 10px;
-  background: #000000;
-  border-radius: 8px;
-  border: 1px solid white;
-  box-sizing: border-box;
-  color: white;
-}
-.section-header .botonesHeader .botonCursos a{
-  color: white;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
-}
-
-.section-header .botonesHeader .botonPlano{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 130px;
-  height: 35px;
-  padding: 10px;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  border-radius: 8px;
-}
-
-.section-header .botonesHeader .botonPlano a{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-.section-header .divImagen{/*Acomodar la imagen del piano*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
- .section-header .divImagen img{
-filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
-}  
-/*-------------------------Segunda Hoja--------------------------------*/
-.segundaPagina{
-  height: 100vh;
-  position: relative;
-  height: 100%;
-
-}
-
-#container {
-  width: 100%;
-  position: relative;
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
   overflow: hidden;
-}
-#container h2{
-width: 288px;
-height: 72px;
-font-family: 'Abril Fatface';
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 32px;
-text-align: center;
-letter-spacing: 0.05em; 
-color: #000000;
-z-index: 2;
-position: relative;
-margin: auto;
+  margin: 20px;
+  padding: 20px;
+  top: 40px;
 }
 
-.segundaPagina .conoceNuestro{
+#header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.segundaPagina .conoceNuestro .pianosOnditas{
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-
-#container video {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 0;
+#header .container .logo img {
+  max-height: 88px;
 }
 
-#container div {
-  position: relative;
-  z-index: 1;
+#header .container .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.segundaPagina .textoSegundaPagina{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(180deg, #FFFFFF 0%,
-    rgba(0, 0, 0, 0.75) 37.19%,
-    rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
-}
-.segundaPagina .textoSegundaPagina .ebony{ 
-width: 288px;
-height: 32px;
-font-family: 'Abril Fatface';
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 32px;
-display: flex;
-justify-content: center;
-letter-spacing: 0.05em;
-color: #FFFFFF;
-}
-.segundaPagina .textoSegundaPagina .clasificacion{
-  display: flex;
-  align-items: center;
-}
-.segundaPagina .textoSegundaPagina .clasificacion li{/*Espacio entre estrellitas*/
-margin-right: 15px;
-}
-.segundaPagina .textoSegundaPagina .clasificacion .estrellita{
-width: 100%;
-}
-
-.segundaPagina .textoSegundaPagina .lorem{
-  width: 288px;
-  height: 131px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-}
-.segundaPagina .textoSegundaPagina .precio{
-  width: 224px;
-  height: 32px;
-  font-family: 'Abril Fatface';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-}
-
-.segundaPagina .textoSegundaPagina .informacionMueble{
-  display: flex;
-}
-.segundaPagina .textoSegundaPagina .informacionMueble li{/*Espacio entre circulito*/
-margin-right: 15px;
-}
-.segundaPagina .textoSegundaPagina .informacionMueble .circulitosGris{
-width: 100%;
-}
-.segundaPagina .textoSegundaPagina .ulBotonCarrito{
-  padding: 0;
-}
-.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-  background: #000000;
-  border-radius: 8px;
-  border: 1px solid white;
-  box-sizing: border-box;
-  color: white;
-}
-.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito a{
-  width: 228px;
-  height: 32px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-}
-#container  .Responsive{
-    display: none;
-    width: 50%;
-    align-items: flex-start;
-}
-
-  
-
-
-
-/*Laptop*/
-@media screen and (min-width: 1024px){
-
-  .oculto,.Contactanosoculto{
-  display: block;
-  }
-  .section-header .nav-sectionHeader ul{
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 10px 40px 30px;
-}
-
-  .section-header .nav-sectionHeader ul li{
-  margin: 5px 10px 0px 30px;
-  }
-  .section-header .nav-sectionHeader .ulTextos{
-    align-items: center;
-  }
-
-  .section-header .nav-sectionHeader .ulTextos .Contactanosoculto {
-    display: flex;
-    padding: 10px;
-    width: 110px;
-    height: 32px;
-    background:black;
-    border-radius: 8px;
-  }
-
-  .section-header .nav-sectionHeader .ulTextos .Contactanosoculto a{
-    display: flex;
-    align-items: center;   
-    text-align: center ;
-    color: #E5E5E5;
-    /*Especificaciones letra*/
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-  }
-  .section-header .textos .divTextos .instituto{
-  width: 494px;
-  height: 62px;
-  font-size: 56px;
-  line-height: 76px;
-  margin: 0 0px 30px 100px;
-  }  
-  .section-header .divImagen img{
-  margin-top: 50px;
-  filter:drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0))
-} 
-.segundaPagina{
-  
-  background: linear-gradient(180deg,
-     #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%,
-     rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%,
-     rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
-     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-#container h2{
-  
-  width: 470px;
-  height: 62px;
-  font-size: 32px;
-  line-height: 43px;  
-  margin:auto;
-}
-#container .Responsive{
-    display: flex;
-    flex-direction: column;
-    background: none; 
-    margin-left: 1.5rem;
-    width: 30%;
-}
-.segundaPagina .conoceNuestro {
-  width: 70%;
-}
-
-.segundaPagina .textoSegundaPagina{
-  display: none;
-  
-}
-.segundaPagina .textoSegundaPagina .lorem{
-  text-align: left;
-  margin-left: 30px;
-}
-.segundaPagina .textoSegundaPagina .precio{
-width: auto;
-margin-left: 30px;
-}
-.segundaPagina .textoSegundaPagina .clasificacion li{/*Espacio entre estrellitas*/
-margin-right: 5px;
-}
-.segundaPagina .textoSegundaPagina .clasificacion li a{/*Color valoracion*/
-  color: #FFFFFF;
-}
-
-.segundaPagina .textoSegundaPagina .clasificacion .estrellita{
-width: 32px;
-}
-.segundaPagina .textoSegundaPagina .informacionMueble li{/*Espacio entre circulito*/
-margin-right: 5px;
-}
-.segundaPagina .textoSegundaPagina .informacionMueble li a{
-color: #FFFFFF;
-}
-.segundaPagina .textoSegundaPagina .informacionMueble .circulitosGris{
-width: 4px;
-}
-.segundaPagina .textoSegundaPagina .ulBotonCarrito .botonAgregarCarrito{
-  margin-left: 15px;
-}
-
-
-
-
-
-}/*MediaQuery 1024****/
-
-
-
+/*# sourceMappingURL=style.css.map */
